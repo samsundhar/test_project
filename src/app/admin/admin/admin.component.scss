@@ -1,0 +1,23 @@
+// styles for profile image
+.profile {
+    width: 4cm;
+    max-height: 4.5cm;
+    padding: 3px .5cm;
+    border: 2px solid green;
+    margin: auto auto;
+    // background-color: red;
+    // background-size: cover;
+    &__image {
+      max-width: 3cm;
+      min-height: 2.5cm;
+      max-height: 3.5cm;
+  
+      object-fit: cover;
+      overflow: hidden;
+      
+    }
+    &__button {
+      font-weight: 600;
+      text-align: center;
+    }
+  }

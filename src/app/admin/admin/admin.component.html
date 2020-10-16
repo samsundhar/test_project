@@ -1,0 +1,35 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <form [formGroup]="AdminFormGroup">
+            <div class="row">
+                <div class="col-6">
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput placeholder="Name" formControlName="name">
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-4">
+                    <label for="upload">Upload Image (must be less than 100kb)</label>
+                </div>
+                <div class="col-md-6">
+                    <input type="file" accept=".jpg, .jpeg" (change)="uploadFile($event)">
+                    <span class="text-danger font-weight-bold" *ngIf="filesize_error ===true">File Must be less than
+                        100Kb</span>
+                    <span class="text-danger font-weight-bold" *ngIf="filetype_error ===true">File must be of type
+                        .jpg/.jpeg</span>
+                </div>
+            </div>
+            <div class="row justify-content-start mt-2">
+                <div class="col-12 col-sm-6 col-md-2 col-lg-2">
+                    <div class="profile">
+                        <img class="profile__image" [src]="imageUrl" alt="">
+                        <div class="profile__button">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

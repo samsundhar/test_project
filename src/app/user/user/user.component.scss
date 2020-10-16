@@ -1,0 +1,24 @@
+.table {
+    width: 100%;
+}
+// table th {
+//     background-color: blue;
+//     color: white;
+// }
+button {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+mat-form-field {
+    width: 100%;
+}
+.main-content {
+    width: 100%;
+}
